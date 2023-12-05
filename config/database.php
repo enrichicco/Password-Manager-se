@@ -37,10 +37,16 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
+            'database' => env('DB_DATABASE', 'dbpawd'),
             'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
+            'password' => env('DB_PASSWORD', 'forge'),
+            // 'unix_socket' => '/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock',
+            /*
+DB_SOCKET=/var/run/mysqld/mysqld.sock
+DB_SOCKET=/Applications/XAMPP/xamppfiles/var/mysql/mysqld.sock
+DB_LOG=false
+DB_LOG_BACKTRACE=false
+            */ 
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
